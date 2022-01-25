@@ -1,0 +1,19 @@
+.p1{
+    color: black;
+    text-decoration: none;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+p{
+    color: white;
+    text-decoration: none;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.align-button{
+    position: absolute;
+    top: 7px;
+    right: 205px;
+}

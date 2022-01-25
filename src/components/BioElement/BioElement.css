@@ -1,0 +1,27 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 45px;
+}
+
+.bio-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

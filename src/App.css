@@ -1,0 +1,13 @@
+.align-button-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.base-app-text {
+  color: white;
+  text-decoration: none;
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
