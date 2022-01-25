@@ -7,8 +7,8 @@
 2) cd solana-base-app
 3) yarn install or npm install
 4) yarn start
-=> yarn install will install the required dependecies
-=> with yarn start a localhost server will start at localhost:1234
+> yarn install will install the required dependecies
+> with yarn start a localhost server will start at localhost:1234
 
 --------------------
 ### solana-base-app includes most basic funcationalities required to make a Solana dapp,
