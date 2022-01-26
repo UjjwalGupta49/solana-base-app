@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "author": "Ujjwal Gupta",
     "repository": "https://github.com/UjjwalGupta49/solana-base-app",
-    "license": "Apache-2.0",
+    "license": "",
     "publishConfig": {
         "access": "public"
     },
