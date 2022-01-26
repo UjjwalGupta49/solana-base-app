@@ -26,8 +26,13 @@ such as:
 
 --------------------
 
-### Updates
-This is the React.js version without Anchor, Anchor integration to the React.js vesion will added and version with Next.js will be out soon.
+### Roadmap
+1) Adding **Anchor ⚓**
+2) Making **Next.js as default framework**
+3) having an **npx package** to simply do (npx create solana-dapp -nextjs)
+4) have two (npx create solana-dapp -nextjs) and (npx create solana-dapp -reactjs)
+5) interactions with **SPL tokens**
+6) Additional interactivity with Serum, Metaplex
 
 ## By: Ujjwal Gupta
 For queries: ujjwalg056@gmail.com, 
