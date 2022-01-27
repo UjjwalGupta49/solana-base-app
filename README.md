@@ -3,6 +3,12 @@
 ## solana-base-app is for Solana beginners to get them up and running fast.
 
 ### To start run :
+1) run `npx solana-base-app react my-app` 
+
+2) change the directory to `my-app` and run `yarn start` to start the development server. 
+
+> all the dependencies will be installed and a base app will be created in the current directory.
+OR
 1) `git clone https://github.com/UjjwalGupta49/solana-base-app.git`
 2) `cd solana-base-app`
 3) `yarn install or npm install`
@@ -27,13 +33,16 @@ such as:
 --------------------
 
 ### Roadmap
-1) Adding **Anchor ⚓**
-2) Making **Next.js as default framework**
-3) having an **npx package** to simply do (npx create solana-dapp -nextjs)
+1) having an **npx package** to simply do (npx solana-base-app react my-app) ✔️
+2) Adding **Anchor ⚓**
+3) Making **Next.js as default framework**
 4) have two (npx create solana-dapp -nextjs) and (npx create solana-dapp -reactjs)
 5) interactions with **SPL tokens**
 6) Additional interactivity with Serum, Metaplex
+--------------------
 
+### Updates
+(27/01/2022) => solana-base-app npx package is now live, try using with (npx solana-base-app react my-app)
 ## By: Ujjwal Gupta
 For queries: ujjwalg056@gmail.com, 
 https://twitter.com/UjjwalG52261234
