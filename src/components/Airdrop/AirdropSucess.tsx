@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
 
+
 export const AirdropSucessFull: FC = () => {
     const [open, setOpen] = React.useState(true);
 

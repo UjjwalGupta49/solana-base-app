@@ -22,6 +22,7 @@ import { WalletNotConnectedError } from '@solana/wallet-adapter-base';
 import { BioElement } from './components/BioElement/BioElement';
 import { GetBalance } from './components/GetBalance/GetBalance';
 import { Airdrop } from './components/Airdrop/Airdrop';
+import { NavAppBar } from './components/Navbar/Navbar';
 
 import twitterLogo from './assets/twitter-logo.svg';
 import githubLogo from './assets/github-logo.svg';
@@ -68,6 +69,9 @@ export const App: FC = () => {
 
     return (
         <div>
+                <div>
+                    <NavAppBar />
+                </div>
             <Context>
                 <div className="align-button-top-right">
                     <Content />
@@ -78,6 +82,7 @@ export const App: FC = () => {
                 <div>
                     <Airdrop />
                 </div>
+
             </Context>
             <div className='base-app-text'>
                 <h1>Solana-Base-App 🔥 </h1>
