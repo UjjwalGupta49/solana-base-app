@@ -33,9 +33,9 @@ export const Airdrop: FC = () => {
 
     return (
         <div>
-            <div className='align-airdrop-button'>
-                <Button onClick={airdropSol} size="large" variant="contained" color="secondary">
-                    Airdrop SOL
+            <div>
+                <Button onClick={airdropSol}  variant="text" >
+                    <p>Airdrop SOL</p>
                 </Button>
             </div>
             <div>

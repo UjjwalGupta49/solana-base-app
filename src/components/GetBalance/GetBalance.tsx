@@ -1,5 +1,5 @@
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { WalletError, WalletNotConnectedError, NotConnected } from '@solana/wallet-adapter-base';
+import { WalletError, WalletNotConnectedError } from '@solana/wallet-adapter-base';
 import { Keypair, SystemProgram, Transaction, LAMPORTS_PER_SOL } from '@solana/web3.js';
 import React, { useCallback, FC, useState, useRef } from 'react';
 import './GetBalance.css';
@@ -11,14 +11,6 @@ export const GetBalance: FC = () => {
     const { publicKey } = useWallet();
     const [checkAmount, setAmount] = useState(0);
 
-    // const ErrorComponent = () => {
-    //     return (
-    //         <div>
-    //             <WalletNotConnected />
-    //             {new WalletNotConnectedError()}
-    //         </div>
-    //     );
-    // };
 
     const checkBalance = useCallback(async () => {
         if (!publicKey) {
@@ -34,14 +26,7 @@ export const GetBalance: FC = () => {
     }, [connection, publicKey]);
 
     return (
-        <div>
-            <div className='align-button'>
-                <Button onClick={checkBalance} variant="contained" size='large'>
-                    Wallet Balance
-                </Button>
-                {<p>Balance: {checkAmount} SOL</p>}
-            </div>
-        </div>
+        <Button onClick={checkBalance} variant= "text" ><p>{checkAmount} SOL</p></Button>
     );
 };
 // how to read value of walletBalanceSOL outside of the function?

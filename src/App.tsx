@@ -13,6 +13,8 @@ import {
 import { clusterApiUrl } from '@solana/web3.js';
 import React, { FC, ReactNode, useMemo } from 'react';
 require('@solana/wallet-adapter-react-ui/styles.css');
+import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar, Box, Toolbar, Button, IconButton, Typography } from '@mui/material';
 
 import './App.css';
 
@@ -22,7 +24,6 @@ import { WalletNotConnectedError } from '@solana/wallet-adapter-base';
 import { BioElement } from './components/BioElement/BioElement';
 import { GetBalance } from './components/GetBalance/GetBalance';
 import { Airdrop } from './components/Airdrop/Airdrop';
-import { NavAppBar } from './components/Navbar/Navbar';
 
 import twitterLogo from './assets/twitter-logo.svg';
 import githubLogo from './assets/github-logo.svg';
@@ -66,25 +67,41 @@ export const App: FC = () => {
     const Content: FC = () => {
         return <WalletMultiButton />;
     };
+    const NavAppBar: FC = (props) => {
+        return (
+            <Box sx={{ flexGrow: 1 }}>
+                <AppBar position="static">
+                    <Toolbar>
+                        <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+                            <MenuIcon />
+                        </IconButton>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="div"
+                            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+                        >
+                            🔥
+                        </Typography>
+                        <Airdrop />
+                        <GetBalance />
+                    </Toolbar>
+                </AppBar>
+            </Box>
+        );
+    };
 
     return (
         <div>
+            <Context>
                 <div>
                     <NavAppBar />
                 </div>
-            <Context>
                 <div className="align-button-top-right">
                     <Content />
                 </div>
-                <div>
-                    <GetBalance />
-                </div>
-                <div>
-                    <Airdrop />
-                </div>
-
             </Context>
-            <div className='base-app-text'>
+            <div className="base-app-text">
                 <h1>Solana-Base-App 🔥 </h1>
             </div>
             <div>
@@ -94,5 +111,6 @@ export const App: FC = () => {
     );
 };
 
-// wallet is connected or not to be given as props to GetBalance component and then render and pefrom function based on that.
-// wallet connectio to be defined by useWallet()
+
+
+// Built By Ujjwal Gupta https://twitter.com/UjjwalG52261234
