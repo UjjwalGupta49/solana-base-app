@@ -29,4 +29,4 @@ export const GetBalance: FC = () => {
         <Button onClick={checkBalance} variant= "text" ><p>{checkAmount} SOL</p></Button>
     );
 };
-// how to read value of walletBalanceSOL outside of the function?
+
