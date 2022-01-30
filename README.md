@@ -23,8 +23,8 @@ such as:
 2) getting wallet balance
 3) sending transactions
 
-![base-app](https://user-images.githubusercontent.com/83765858/150945108-ee8f007b-8d6e-4f5d-a44c-66b635e796b8.png)
 
+![ui_rework1](https://user-images.githubusercontent.com/83765858/151718221-eeccc836-4038-43a3-9ee6-686a9c41594c.png)
 
 ![base-app1](https://user-images.githubusercontent.com/83765858/150945371-d0703557-3f85-48e4-ba60-502b8c588bee.png)
 
@@ -42,7 +42,8 @@ such as:
 --------------------
 
 ### Updates
-(27/01/2022) => solana-base-app npx package is now live, try using with (npx solana-base-app react my-app)
+(27/01/2022) => solana-base-app npx package is now live, try using with (npx solana-base-app react my-app)<br/>
+(31/01/2022) => UI re-work<br/>
 ## By: Ujjwal Gupta
 For queries: ujjwalg056@gmail.com, 
 https://twitter.com/UjjwalG52261234
