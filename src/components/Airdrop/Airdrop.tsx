@@ -1,11 +1,10 @@
 import { WalletNotConnectedError } from '@solana/wallet-adapter-base';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { Keypair, SystemProgram, Transaction, LAMPORTS_PER_SOL } from '@solana/web3.js';
+import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import React, { FC, useCallback, useState } from 'react';
-import { render } from 'react-dom';
 import { Button } from '@mui/material';
 import { AirdropSucessFull } from './AirdropSucess';
-import './Airdrop.css'
+import './Styles/Airdrop.css'
 
 export const Airdrop: FC = () => {
     const { connection } = useConnection();
@@ -38,7 +37,7 @@ export const Airdrop: FC = () => {
                     <p>Airdrop SOL</p>
                 </Button>
             </div>
-            <div>
+            <div className='notification-airdrop-sucess'>
                 {isAirdrop ? <AirdropSucessFull /> : null}
             </div>
         </div>

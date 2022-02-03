@@ -1,10 +1,10 @@
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { WalletError, WalletNotConnectedError } from '@solana/wallet-adapter-base';
 import { Keypair, SystemProgram, Transaction, LAMPORTS_PER_SOL } from '@solana/web3.js';
-import React, { useCallback, FC, useState, useRef } from 'react';
+import React, { useCallback, FC, useState, useEffect } from 'react';
 import './GetBalance.css';
 import { Button } from '@mui/material';
-import { WalletNotConnected } from './WalletNotConnected';
+
 
 export const GetBalance: FC = () => {
     const { connection } = useConnection();
@@ -14,7 +14,7 @@ export const GetBalance: FC = () => {
 
     const checkBalance = useCallback(async () => {
         if (!publicKey) {
-            throw new WalletNotConnectedError() && alert('Wallet not connected');
+            throw new WalletNotConnectedError();
         }
 
         const walletBalance = await connection.getBalance(publicKey, 'confirmed');
@@ -24,6 +24,11 @@ export const GetBalance: FC = () => {
         console.log(publicKey);
         // balanceElement= <p>{walletBalanceSOL}</p>;
     }, [connection, publicKey]);
+
+    useEffect(() => {
+        console.log('WalletBalance checked');
+        checkBalance();
+    }, [publicKey, checkBalance]);
 
     return (
         <Button onClick={checkBalance} variant= "text" ><p>{checkAmount} SOL</p></Button>
