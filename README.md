@@ -26,7 +26,7 @@ such as:
 
 ![ui_rework1](https://user-images.githubusercontent.com/83765858/151718221-eeccc836-4038-43a3-9ee6-686a9c41594c.png)
 
-![base-app1](https://user-images.githubusercontent.com/83765858/150945371-d0703557-3f85-48e4-ba60-502b8c588bee.png)
+![03-02-2022 community update](https://user-images.githubusercontent.com/83765858/152333261-6fa6f542-1efb-47b2-beed-9b76c3dfc8b3.png)
 
 ![base-app2](https://user-images.githubusercontent.com/83765858/150945501-4df79f47-76b1-414b-ad58-f7f50c38f2e8.png)
 
@@ -44,6 +44,7 @@ such as:
 ### Updates
 (27/01/2022) => solana-base-app npx package is now live, try using with (npx solana-base-app react my-app)<br/>
 (31/01/2022) => UI re-work<br/>
+(03/02/2022) => Community sugested updates<br/>
 ## By: Ujjwal Gupta
 For queries: ujjwalg056@gmail.com, 
 https://twitter.com/UjjwalG52261234
