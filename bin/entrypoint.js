@@ -27,7 +27,6 @@ const ifAnchor = args[2];
 
 const gitCheckoutCommand = `git clone https://github.com/UjjwalGupta49/solana-base-app ${folderName}`;
 const installDependencies = `cd ${folderName} && npm install`;
-const shxInstall = `npm install shx --save-dev"`;
 const fixAnyErrors = `cd ${folderName} && npm audit fix`;
 console.log(`cloning the repository to name ${folderName}`.cyan);
 const checkedOut = runCommand(gitCheckoutCommand);
@@ -40,11 +39,7 @@ const dependenciesInstalled = runCommand(installDependencies);
 if (!dependenciesInstalled){
     process.exit(-1);
 }
-console.log(`installing shx`.cyan);
-const shxInstalled = runCommand(shxInstall);
-if (!shxInstalled){
-    process.exit(-1);
-}
+
 console.log("Scanning for errors...".cyan);
 const fixErrors = runCommand(fixAnyErrors);
 console.log("Congratulations! You are ready to develop on Solana! \nCheckout the README.md for more info at https://github.com/UjjwalGupta49/solana-base-app\n".green);

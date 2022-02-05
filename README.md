@@ -45,6 +45,7 @@ such as:
 (27/01/2022) => solana-base-app npx package is now live, try using with (npx solana-base-app react my-app)<br/>
 (31/01/2022) => UI re-work<br/>
 (03/02/2022) => Community sugested updates<br/>
+(05/02/2022) => Improved installation<br/>
 ## By: Ujjwal Gupta
 For queries: ujjwalg056@gmail.com, 
 https://twitter.com/UjjwalG52261234
