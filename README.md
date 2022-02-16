@@ -15,6 +15,7 @@ OR
 4) `yarn start`
 > yarn install will install the required dependecies,
 > with yarn start a localhost server will start at ***localhost:1234***
+> documentation for [Next.js](https://github.com/UjjwalGupta49/solana-base-app-next) support
 
 --------------------
 ### solana-base-app includes most basic funcationalities required to make a Solana dapp,
@@ -35,8 +36,8 @@ such as:
 ### Roadmap
 1) having an **npx package** to simply do (npx solana-base-app react my-app) ✔️
 2) Adding **Anchor ⚓**
-3) Support for **Next.js** ((npx solana-base-app next my-app))✔️ 
-4) have two (npx create solana-dapp -nextjs) and (npx create solana-dapp -reactjs)
+3) Support for [Next.js](https://github.com/UjjwalGupta49/solana-base-app-next) (npx solana-base-app next my-app)✔️
+4) have two (npx solana-base-app next my-app) and (npx solana-base-app react my-app) ✔️
 5) interactions with **SPL tokens**
 6) Additional interactivity with Serum, Metaplex
 --------------------
@@ -46,7 +47,7 @@ such as:
 (31/01/2022) => UI re-work<br/>
 (03/02/2022) => Community sugested updates<br/>
 (05/02/2022) => Improved installation<br/>
-(15/02/2022) => Support for [Next JS](https://github.com/UjjwalGupta49/solana-base-app-next)
+(15/02/2022) => Support for [Next JS](https://github.com/UjjwalGupta49/solana-base-app-next)<br/>
 ## By: Ujjwal Gupta
 For queries: ujjwalg056@gmail.com, 
 https://twitter.com/UjjwalG52261234
