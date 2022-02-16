@@ -15,7 +15,7 @@ OR
 4) `yarn start`
 > yarn install will install the required dependecies,
 > with yarn start a localhost server will start at ***localhost:1234***
-> documentation for [Next.js](https://github.com/UjjwalGupta49/solana-base-app-next) support
+documentation for [Next.js](https://github.com/UjjwalGupta49/solana-base-app-next) support
 
 --------------------
 ### solana-base-app includes most basic funcationalities required to make a Solana dapp,
