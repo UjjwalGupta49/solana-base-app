@@ -30,6 +30,8 @@ such as:
 
 ![03-02-2022 community update](https://user-images.githubusercontent.com/83765858/152333261-6fa6f542-1efb-47b2-beed-9b76c3dfc8b3.png)
 
+![image](https://user-images.githubusercontent.com/83765858/157628010-db841218-acfc-4d88-a32b-657a27f7524d.png)
+
 ![base-app2](https://user-images.githubusercontent.com/83765858/150945501-4df79f47-76b1-414b-ad58-f7f50c38f2e8.png)
 
 --------------------
@@ -39,7 +41,7 @@ such as:
 2) Adding **Anchor ⚓**
 3) Support for [Next.js](https://github.com/UjjwalGupta49/solana-base-app-next) (npx solana-base-app next my-app)✔️
 4) have two (npx solana-base-app next my-app) and (npx solana-base-app react my-app) ✔️
-5) Upcoming Solana pay Support ⌛
+5) Upcoming Solana pay Support ✔️
 6) interactions with **SPL tokens**
 7) Additional interactivity with Serum, Metaplex
 --------------------
@@ -50,6 +52,7 @@ such as:
 (03/02/2022) => Community sugested updates<br/>
 (05/02/2022) => Improved installation<br/>
 (15/02/2022) => Support for [Next JS](https://github.com/UjjwalGupta49/solana-base-app-next)<br/>
+(10/03/2022) => Added transaction support, **Solana pay**<br/>
 ## By: Ujjwal Gupta
 For queries: ujjwalg056@gmail.com, 
 https://twitter.com/UjjwalG52261234
