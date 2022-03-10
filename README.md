@@ -39,8 +39,9 @@ such as:
 2) Adding **Anchor ⚓**
 3) Support for [Next.js](https://github.com/UjjwalGupta49/solana-base-app-next) (npx solana-base-app next my-app)✔️
 4) have two (npx solana-base-app next my-app) and (npx solana-base-app react my-app) ✔️
-5) interactions with **SPL tokens**
-6) Additional interactivity with Serum, Metaplex
+5) Upcoming Solana pay Support ⌛
+6) interactions with **SPL tokens**
+7) Additional interactivity with Serum, Metaplex
 --------------------
 
 ### Updates
