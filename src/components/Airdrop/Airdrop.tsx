@@ -12,22 +12,25 @@ export const Airdrop: FC = () => {
     const [isAirdrop, setAirdrop] = useState(false);
 
     const airdropSol = useCallback(async () => {
-        if (!publicKey) {
-            throw new WalletNotConnectedError() && alert('Wallet not connected');
+        if (publicKey != null) {
+            try {
+                console.log('Air dropping... 2 SOL');
+                const fromAirDropSignature = await connection.requestAirdrop(
+                    publicKey,
+                    2 * LAMPORTS_PER_SOL // max airdrop at max 2 SOL in one transaction
+                );
+                await connection.confirmTransaction(fromAirDropSignature);
+                console.log('Drop successful!');
+                setAirdrop(true);
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        else {
+            console.log('⚠️ Wallet not connected');
         }
 
-        try {
-            console.log('Air dropping... 2 SOL');
-            const fromAirDropSignature = await connection.requestAirdrop(
-                publicKey,
-                2 * LAMPORTS_PER_SOL // max airdrop at max 2 SOL in one transaction
-            );
-            await connection.confirmTransaction(fromAirDropSignature);
-            console.log('Drop successful!');
-            setAirdrop(true);
-        } catch (err) {
-            console.log(err);
-        }
+
     }, [publicKey, connection]);
 
     return (

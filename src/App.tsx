@@ -24,8 +24,9 @@ export const App: FC = () => {
     
             </Context>
             <div className="base-app-text">
-                <h1>Solana-Base-App 🔥 </h1>
+                <h1>Solana-Base-App 🔥 </h1> 
             </div>
+            <div id="qr-solanaPay"><p>Apple</p></div>
             <div>
                 <BioElement logo={LOGO} link={HANDLE}></BioElement>
             </div>

@@ -8,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 import { Airdrop } from '../Airdrop/Airdrop';
 import { GetBalance } from '../GetBalance/GetBalance';
+import { SolPayments  } from '../MerchantIntegration/main'
+import { SendTransaction } from '../Transaction/transaction'
 import { Content } from '../WalletConnection/WalletConnection';
 import './Navbar.css';
 
@@ -30,6 +32,8 @@ export const NavAppBar: FC = (props) => {
                         </Typography>
                         <Airdrop />
                         <GetBalance />
+                        <SendTransaction />
+                        <SolPayments />
                         <div className="align-button-top-right">
                             <Content />
                         </div>

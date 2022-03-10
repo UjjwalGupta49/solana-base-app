@@ -13,16 +13,16 @@ export const GetBalance: FC = () => {
 
 
     const checkBalance = useCallback(async () => {
-        if (!publicKey) {
-            throw new WalletNotConnectedError();
+        if (publicKey != null) {
+            const walletBalance = await connection.getBalance(publicKey, 'confirmed');
+            const walletBalanceSOL = (walletBalance / LAMPORTS_PER_SOL).toFixed(2);
+            setAmount(walletBalanceSOL);
+            console.log(walletBalanceSOL);
+            console.log(publicKey);
         }
-
-        const walletBalance = await connection.getBalance(publicKey, 'confirmed');
-        const walletBalanceSOL = (walletBalance / LAMPORTS_PER_SOL).toFixed(2);
-        setAmount(walletBalanceSOL);
-        console.log(walletBalanceSOL);
-        console.log(publicKey);
-        // balanceElement= <p>{walletBalanceSOL}</p>;
+        else {
+            console.log('⚠️ Wallet not connected')
+        }
     }, [connection, publicKey]);
 
     useEffect(() => {
