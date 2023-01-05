@@ -54,5 +54,4 @@ such as:
 (15/02/2022) => Support for [Next JS](https://github.com/UjjwalGupta49/solana-base-app-next)<br/>
 (10/03/2022) => Added transaction support, **Solana pay**<br/>
 ## By: Ujjwal Gupta
-For queries: ujjwalg056@gmail.com, 
-https://twitter.com/UjjwalG52261234
+For queries: ujjwalg056@gmail.com, [@ujjwalgupta49](https://twitter.com/ujjwalgupta49)
